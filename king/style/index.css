@@ -1,0 +1,124 @@
+@media handheld and (min-width: 20em), screen and (min-width: 20em) {
+body {
+  background-image: url('https://api.ooopn.com/image/beauty/api.php');
+    <!--background-image: url('http://bizhi.bcoderss.com/wp-content/uploads/2018/10/iphoneX_2.jpg');-->
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: 0 -3rem;
+    /* 设置背景图片的起始位置 */
+    overflow: hidden;
+    /* 当盒子溢出时内容会被修剪，并且其余内容是不可见的。 */
+}
+
+.search {
+    width: 90%;
+    margin: 40% auto 0;
+}
+
+.search .logo {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.search .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.search .search_form {
+    width: 100%;
+    margin: 0 auto 4% 0;
+    position: relative;
+}
+
+.search .search_form form {
+    width: 100%;
+    height: 100%;
+}
+
+.search .search_form form .text {
+    width: 100%;
+    height: 11vw;
+    background: none;
+    color: #666;
+    font-size: 1rem;
+    padding: 0 3rem 0 1.2rem;
+    box-sizing: border-box;
+    /* 防止padding撑开盒子 */
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0 0 0.5rem 0.1rem rgb(210, 210, 210);
+    z-index: 1;
+    outline: none;
+}
+.search .search_form form .button {
+    width: 10%;
+    height: 100%;
+    background: none;
+    border: none;
+    position: absolute;
+    margin: 0 2%;
+    outline: none;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    z-index: 2;
+}
+
+.nav {
+    width: 80%;
+    margin: 7% auto;
+    display: flex;
+    flex: 1;
+}
+
+.nav .box {
+    width: 25%;
+    position: relative;
+}
+
+.nav .box img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav .box p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+    display: block;
+    margin: 5% auto;
+}
+
+.nav .box a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom {
+    width: 100%;
+    /* position: fixed;
+    bottom: 2rem;
+    left: 0; */
+    margin: 40% 0 0 0;
+}
+
+.bottom p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #999;
+}
+.bottom a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+}

@@ -1,0 +1,29 @@
+var upupooConfig = {
+	'bgImg' : 'bg.png',
+	'type':{
+		'key':'3',
+		'value': '3',
+		'Effect': {
+		}
+	},
+	'size' : {
+		'key':'false',
+		'value': 50
+	},
+	'transparent' : {
+		'key':'false',
+		'value': 10
+	},
+	'speed' : {
+		'key':'false',
+		'value': 90
+	},
+	'density' : {
+		'key':'false',
+		'value': 10
+	},
+	'color' : {
+		'key':'false',
+		'value': '#FFFFFF'
+	}	
+}

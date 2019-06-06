@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {padding: 0;margin: 0;}
+			html,body{width: 100%;height: 100%;}
+			#upupoo_bottomLayer,#upupoo_imageLayer,#upupoo_exhibitionLayer,#upupoo_exhibitionLayer_two{
+				width: 100%;
+				height: 100%;
+			}
+			#upupoo_bottomLayer {
+				position: relative;
+				z-index: 1;
+			}
+			#upupoo_imageLayer {
+				position: absolute;
+				z-index: 10;
+			}
+			#upupoo_imageLayer>#upupoo_imageLayerImg{
+				width: 100% ;
+				height: 100%;
+				display: block;
+				position: absolute;
+				z-index: 11;
+			}
+			#upupoo_exhibitionLayer {
+				position: absolute;
+				z-index: 100;
+			}
+			#upupoo_exhibitionLayer_two {
+				position: absolute;
+				z-index: 101;
+			}
+		</style>
+	</head>
+	<body onselectstart="return false">
+		<div id="upupoo_bottomLayer">
+			<div id="upupoo_imageLayer">
+				<img src="" id="upupoo_imageLayerImg" alt="" style="display: none;" />
+				<div id="upupoo_exhibitionLayer">
+					<canvas id="demo-canvas"> </canvas>
+				</div>	
+				<div id="upupoo_exhibitionLayer_two">
+					
+				</div>
+			</div>
+		</div>
+	<script src="upupooConfig.json" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/kaguya.min.js"></script>
+	<script type="text/javascript">
+		var upupoo_imageLayerImg = document.getElementById('upupoo_imageLayerImg');
+			upupoo_imageLayerImg.src = upupooConfig.bgImg;
+		(function (upupooConfig){
+			var randerObj = upupooConfig.type.Effect.one;
+		})(upupooConfig)
+		
+	</script>
+	</body>
+</html>
