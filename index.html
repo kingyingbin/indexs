@@ -20,6 +20,55 @@ body {background: url(http://pic1.win4000.com/wallpaper/8/59003108d7c05.jpg) no-
 body  {background-image:url(http://pic1.win4000.com/wallpaper/2019-05-27/5ceb86f1553ff.jpg);
 body  {background-image:url(https://api.ooopn.com/image/lofter/api.php);-->	
 <!--style/images/img/33e7652a1464931a.png-->
+<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("❤富强❤","❤民主❤","❤文明❤","❤和谐❤","❤自由❤","❤平等❤","❤公正❤","❤法治❤","❤爱国❤","❤敬业❤","❤诚信❤","❤友善❤");
+        var $i = $("<span></span>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+
+ 
+<!--###############看板娘#################-->
+http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Live2D</title> <link rel="stylesheet" type="text/css"href="https://files.cnblogs.com/files/kousak/waifu.css"/> <script
+src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> </head>
+<body> <link rel="stylesheet" type="text/css"
+href="https://files.cnblogs.com/files/kousak/waifu.css"> <div class="waifu"
+id="waifu"> <div class="waifu-tips" style="opacity: 1;"></div> <canvas
+id="live2d" width="280" height="250" class="live2d"></canvas> <div
+class="waifu-tool"> <span class="fui-home"></span> <!--<span
+class="fui-chat"></span>--> <span class="fui-eye"></span> <span
+class="fui-user"></span> <span class="fui-photo"></span><!-- <span
+class="fui-info-circle"></span> --><span class="fui-cross"></span> </div>
+</div>
+<script src="https://files.cnblogs.com/files/kousak/live2d.js"></script>
+<script src="https://files.cnblogs.com/files/kousak/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script> </body> </html> <link
+rel="stylesheet" type="text/css"
+href="https://files.cnblogs.com/files/yjlblog/flat-ui.min.css"/>
 /*
 描述：这是本地测试的背景照路径*/
 /*background-image:url(style/images/img/);*/
